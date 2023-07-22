@@ -13,17 +13,26 @@ Data period covers games released 1982-2016
 - Sales - includes North America, EU and global sales, along with product, year of release and platform. Other_sales column created by the difference between global sales and EU + NA sales.
 
 # Repository includes 
-R and Python scripts, technical report and presentation for Turtle Games assignment. 
+- R script for sales analysis (Sales data)
+- Python scripts in Jupyter notebook format for marketing analysis (review data)
+- technical report
+- video presentation for Turtle Games assignment
+- powerpoint version of presentation
 
 # Installation
 Rstudio for R script and Jupyter Notebook for Python
 
 # Presentation video
+https://www.youtube.com/watch?v=oe_T7y8bdxM 
 
 # Credits
 Included additional games industry data from:
 GWI report: https://www.gwi.com/reports/the-gaming-playbook
 Mordor: https://www.mordorintelligence.com/industry-reports/global-gaming-market
+
+# Feedback
+All feedback and questions welcome:
+https://forms.gle/k79xgdk77GYDCrNp7
 
 # Contact
 alexnott@gmail.com
