@@ -896,13 +896,15 @@ last_point <- tail(t_sales_year_forecast, n = 1)
 
 # plot 10 year forecast based on year simple linear forecast
 ggplot(data = t_sales_year_forecast, aes(x = year, y = global_sales_forecast)) +
-geom_line() +
-  geom_text(data = last_point, aes(label = round(global_sales_forecast, 2)), 
+  geom_line(color = 'green', size = 1.5) +
+  geom_text(data = last_point, 
+            aes(label = paste('£', (round(global_sales_forecast, 2)), 'million')),
             hjust = -0.2, 
             vjust = 0, 
-            position = position_nudge(x = -1)) +  
-  labs(title = '10 year forecast', x = 'Year',
-       y = 'Global Sales')
+            position = position_nudge(x = -2.5)) +  
+  labs(title = '10 year Global Sales forecast based on Year', x = 'Year',
+       y = 'Global Sales (Million £)')
+
   
 ###############################################################################
 
