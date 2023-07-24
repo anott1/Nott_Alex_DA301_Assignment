@@ -24,7 +24,7 @@ Data period covers games released 1982-2016
 Rstudio for R script and Jupyter Notebook for Python
 
 # Presentation video
-https://www.youtube.com/watch?v=oe_T7y8bdxM 
+https://youtu.be/XA69iIrWIV8 
 
 # Week 1 Insights & Observations
 There is no missing data
