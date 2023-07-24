@@ -372,19 +372,21 @@ ggplot(t_sales_year, aes(x = date)) +
                                 'other_sales' = 'orange')) +
   labs(title = 'Sales by year') +
   scale_x_date(date_breaks = '3 years', date_labels = '%Y')
-
+# Observations: Sales dropping across all markets. Note this is based on 
+# Year of release, not year of sale, so if plotted by sales
+# year might show different patterns.
 
 ###############################################################################
 
 # 3. Observations and insights
 
 ## Your observations and insights here ......
-# Global sales are increasing y on year.
+# See github README for full summary
+
+# Global sales are increasing year on year.
 # NA sales are showing a slower linear regression line
 # EU continuing to grow but slower than global
 # indicates there are other faster growing markets to explore
-
-
 
 
 ###############################################################################
@@ -736,6 +738,8 @@ corPlot(t_sales_cor, cex = -1)
 
 # 5. Observations and insights
 # Your observations and insights here...
+# See github README for full summary
+
 # Observation: all the variables are positive but NA_sales correlates
 # highest with global_sales (0.92). 
 # So we can use NA sales to forecast Global sales
@@ -893,6 +897,7 @@ View(t_sales_year_forecast)
 
 # find the last data point so we can annotate on graph
 last_point <- tail(t_sales_year_forecast, n = 1)
+# £156.21m sales predicted for 2026
 
 # plot 10 year forecast based on year simple linear forecast
 ggplot(data = t_sales_year_forecast, aes(x = year, y = global_sales_forecast)) +
@@ -904,6 +909,8 @@ ggplot(data = t_sales_year_forecast, aes(x = year, y = global_sales_forecast)) +
             position = position_nudge(x = -2.5)) +  
   labs(title = '10 year Global Sales forecast based on Year', x = 'Year',
        y = 'Global Sales (Million £)')
+# Note forecasted based on year of release, so if expected number of products 
+# not released than forecast would be affected.
 
   
 ###############################################################################
@@ -1074,6 +1081,8 @@ ggplot(t_sales_fc_global, aes(x = year, y = global_sales)) +
 
 # 5. Observations and insights
 # Your observations and insights here...
+# See github README for full summary
+
 # Using NA and Year to predict sales from 2016 onwards shows continued 
 # downward trend.
 # 2020 forecast to be £72 million (down from 2006 peak)
